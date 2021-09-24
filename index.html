@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Simple Calculator using HTML, CSS and JavaScript </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style=" margin-left: 50%;
+    margin-top: 10%;
+    background-color: black;
+    width: 214px;
+    height: 129px;">
+        <table class="calculator">
+            <tr>
+                <td colspan="3"> <input class="display-box" type="text" id="result" disabled style="color: aliceblue;" /> </td>
+                <!-- clearScreen() function clear all the values -->
+                <td> <input class="button" type="button" value="C" onclick="clearScreen()" style="background-color: #a7a7a7;" /> </td>
+            </tr>
+            <tr>
+                <!-- display() function display the value of clicked button -->
+                <td> <input class="button" type="button" value="1" onclick="show('1')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="2" onclick="show('2')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="3" onclick="show('3')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="/" onclick="show('/')" style="
+                    width: 100%; " /> </td>
+            </tr>
+            <tr>
+                <td> <input class="button" type="button" value="4" onclick="show('4')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="5" onclick="show('5')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="6" onclick="show('6')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="-" onclick="show('-')" style="
+                    width: 100%; " /> </td>
+            </tr>
+            <tr>
+                <td> <input class="button" type="button" value="7" onclick="show('7')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="8" onclick="show('8')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="9" onclick="show('9')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="+" onclick="show('+')" style="
+                    width: 100%; " /> </td>
+            </tr>
+            <tr>
+                <td> <input class="button" type="button" value="." onclick="show('.')" style="
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="0" onclick="show('0')" style="
+                    width: 70%; " /> </td>
+
+                <td> <input class="button" type="button" value="=" onclick="calcs()" style="background-color: #a7a7a7;
+                    width: 70%; " /> </td>
+                <td> <input class="button" type="button" value="*" onclick="show('*')" style="
+                    width: 100%; " /> </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
